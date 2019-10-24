@@ -3,7 +3,7 @@ function getElementByXpath(path) {
 }
 
 function claimPoints() {
-    let claimButton = getElementByXpath('//div[@class="tw-absolute"]//button');
+    let claimButton = getElementByXpath('//button[@class="tw-button tw-button--success tw-interactive"]');
     if (claimButton !== null) {
         claimButton.click();
         console.log('Points claimed!')
